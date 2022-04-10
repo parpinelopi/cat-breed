@@ -13,6 +13,11 @@ public class Cat {
         this.gender = gender;
     }
 
+    @Override
+    public String toString() {
+        return "name: " + name + " breed: " + breed + " dateOfBirth: " + dateOfBirth + " gender: " + gender;
+    }
+
     public String getName() {
         return name;
     }
