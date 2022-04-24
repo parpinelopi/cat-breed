@@ -54,8 +54,11 @@ public class Main {
 
             for (Cat cat : cats) System.out.println(cat);
             System.out.println(Cat.calculateAverageAge(cats));
+            WikipageHttp httpCall = new WikipageHttp();
+            System.out.println(httpCall.catPageProvision("bombay"));
 
-        } catch (IOException ioException) {
+
+        } catch (IOException | InterruptedException ioException) {
             ioException.printStackTrace();
         }
 
